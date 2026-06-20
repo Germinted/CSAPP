@@ -138,7 +138,8 @@ NOTES:
  *   Rating: 1
  */
 int bitAnd(int x, int y) {
-  return ~(~x | ~y);
+    // TODO: Implement this function
+    return 0;
 }
 /*
  * getByte - Extract byte n from word x
@@ -149,7 +150,8 @@ int bitAnd(int x, int y) {
  *   Rating: 2
  */
 int getByte(int x, int n) {
-    return (x >> (n << 3)) & 0xFF
+    // TODO: Implement this function
+    return 0;
 }
 /*
  * logicalShift - shift x to the right by n, using a logical shift
@@ -160,12 +162,8 @@ int getByte(int x, int n) {
  *   Rating: 3
  */
 int logicalShift(int x, int n) {
-    int shift = x >> n;
-    int mask = (1 << 31) >> n;
-    mask = mask << 1;
-    mask = ~mask;
-    return shift & mask;
-
+    // TODO: Implement this function
+    return 0;
 }
 /*
  * bitCount - returns count of number of 1's in word
@@ -175,19 +173,8 @@ int logicalShift(int x, int n) {
  *   Rating: 4
  */
 int bitCount(int x) {
-    int mask1 = 0x55555555;
-    int mask2 = 0x33333333;
-    int mask3 = 0x0F0F0F0F;
-    int mask4 = 0x00FF00FF;
-    int mask5 = 0x0000FFFF;
-
-    x = (x & mask1) + ((x >> 1) & mask1);
-    x = (x & mask2) + ((x >> 2) & mask2);
-    x = (x & mask3) + ((x >> 4) & mask3);
-    x = (x & mask4) + ((x >> 8) & mask4);
-    x = (x & mask5) + ((x >> 16) & mask5);
-
-    return x;
+    // TODO: Implement this function
+    return 0;
 }
 /*
  * bang - Compute !x without using !
@@ -197,7 +184,8 @@ int bitCount(int x) {
  *   Rating: 4
  */
 int bang(int x) {
-    return ((x | (~x + 1)) >> 31) + 1;
+  // TODO: Implement this function
+  return 0;
 }
 /*
  * tmin - return minimum two's complement integer
@@ -206,7 +194,8 @@ int bang(int x) {
  *   Rating: 1
  */
 int tmin(void) {
-  return 1 << 31;
+  // TODO: Implement this function
+  return 0;
 }
 /*
  * fitsBits - return 1 if x can be represented as an
@@ -218,8 +207,8 @@ int tmin(void) {
  *   Rating: 2
  */
 int fitsBits(int x, int n) {
-  int shift = 32 + ~n + 1;
-  return !(x ^ ((x << shift) >> shift));
+  // TODO: Implement this function
+  return 0;
 }
 /*
  * divpwr2 - Compute x/(2^n), for 0 <= n <= 30
