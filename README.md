@@ -48,6 +48,15 @@ This directory contains the CSAPP (Computer Systems: A Programmer's Perspective)
 - Main function cleared except for user_agent_hdr definition
 - Students implement full HTTP proxy server
 
+## Template Branch
+
+A `template` branch is available in this repository that contains empty function stubs for the exercises. This branch is specifically designed for students who want to start with clean templates and implement all functions from scratch.
+
+To switch to the template branch:
+```bash
+git checkout template
+```
+
 ## Building and Testing
 
 Each lab has its own Makefile and build instructions in the respective lab directory. Refer to the PDF documentation included in each lab folder for specific requirements.
